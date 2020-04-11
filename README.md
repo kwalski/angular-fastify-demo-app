@@ -12,9 +12,9 @@
   - `npm i`
   - `ng serve`
 
-## SCREENCAST
+## YOUTUBE SCREENCAST
 
-[<img src="https://img.youtube.com/vi/iC1SRrudW1Y/maxresdefault.jpg" width="100%">](https://youtu.be/iC1SRrudW1Y>)
+[<img src="https://img.youtube.com/vi/iC1SRrudW1Y/0.jpg" width="100%">](https://youtu.be/iC1SRrudW1Y)
 
 ### Documentation
 
