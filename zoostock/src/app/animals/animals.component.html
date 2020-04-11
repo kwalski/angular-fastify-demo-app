@@ -1,0 +1,38 @@
+<h1 class="mat-display-1" style="color:#efefef;margin:1em">Zoo Stock</h1>
+
+<button
+  *ngIf="!displayForm"
+  mat-raised-button
+  color="accent"
+  (click)="displayForm = true"
+>
+  NEW
+</button>
+
+<form *ngIf="displayForm" [formGroup]="formGroup">
+  <mat-form-field>
+    <mat-label>Id</mat-label>
+    <input matInput placeholder="Id" formControlName="id" />
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Name</mat-label>
+    <input matInput placeholder="Name" formControlName="name" />
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Count</mat-label>
+    <input matInput placeholder="count" formControlName="count" />
+  </mat-form-field>
+  <button mat-button color="warn" (click)="displayForm = false">CANCEL</button>
+  <button mat-button color="accent" (click)="save()">SAVE</button>
+</form>
+
+<mat-list>
+  <mat-list-item *ngFor="let a of animals" class="li">
+    <p mat-line>
+      Id: {{ a.id }} &nbsp; Name: {{ a.name }} &nbsp; Count: {{ a.count }}
+    </p>
+
+    <button mat-button (click)="edit(a)" color="accent">EDIT</button>
+    <button mat-button color="warn" (click)="delete(a)">DELETE</button>
+  </mat-list-item>
+</mat-list>
