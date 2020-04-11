@@ -18,6 +18,8 @@
 
 ### Documentation
 
-    - [https://angular.io]
-    - [https://material.angular.io]
-    - [https://www.fastify.io]
+https://angular.io
+
+https://material.angular.io
+
+https://www.fastify.io
