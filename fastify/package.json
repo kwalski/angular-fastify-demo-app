@@ -9,7 +9,7 @@
   "author": "Gi Singh",
   "license": "ISC",
   "dependencies": {
-    "fastify": "^2.13.0",
+    "fastify": "^2.15.1",
     "fastify-cors": "^3.0.3"
   }
 }
